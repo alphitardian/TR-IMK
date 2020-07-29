@@ -1,3 +1,41 @@
 body{
     font-family: 'Lato', sans-serif!important;
 }
+
+.nav-item .nav-link{
+    color: #47525E!important;
+    font-size: 18px;    
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.bannerImage{
+    background-image: linear-gradient(
+        rgba(3, 172, 14, 0.8),
+        rgba(3, 172, 14, 0.8)
+      ),
+      url(https://media.clinicaladvisor.com/images/2017/01/06/olderpatientwithdoctorcopd_1128541.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+}
+
+a.servicesMenu .card-title{
+    color: #333;
+    transition: ease .5s all;
+}
+a.servicesMenu:hover{
+    background-color: #eee;
+    text-decoration: none!important;
+    transition: ease .5s all;
+}
+
+.specialistPhoto{
+    width: 95%;
+    transition: ease .5s all;
+}
+.specialistPhoto:hover{
+    width: 100%;
+    transition: ease .5s all;
+}
