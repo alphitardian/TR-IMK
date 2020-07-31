@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- Fonts CSS -->
-
+    <link rel="stylesheet" href="./resource/css/fonts.css"/>
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./resource/css/custom.css">
 
@@ -22,110 +23,134 @@
   </head>
   <body>
     <!-- NavBar -->
-    <div class="sticky-top d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm">
-        <a class="navbar-brand my-0 mr-md-auto" href="#">
-          <img
-            src="resource/images/logoPrekso.png"
-            height="65"
-            alt=""
-            loading="lazy"
-          />
-        </a>
-          <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-dark font-weight-bold" href="index.html">Home</a>
-            <a class="p-2 text-dark font-weight-bold" href="about.html">About</a>
-            <a class="p-2 text-dark font-weight-bold" href="search_doctor.html">Search Doctor</a>
-            <a class="p-2 text-dark font-weight-bold" href="my_account.html">My Account</a>
-          </nav>
-          <a href="">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-              <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-            </svg>
-          </a>
-        </div>
-        <!-- NavBar -->
-  
-        <!-- Banner -->
-        <div class="jumbotron" style="background-color: #35BC3E;">
-          <div class="container">
-              <div class="row">
-                  <div class="col">
-                      <svg width="9em" height="9em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                          <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                        </svg>
-                  </div>
-                  <div class="col">
-                      <h1 class="display-4 text-right font-weight-bold text-uppercase text-light">Find a doctor</h1>
-                      <p class="lead text-right text-light">Take a seat, enter your symptoms, and we will find a doctor for you.</p>
-                  </div>
-              </div>
-          </div>
-        </div>
-        <!-- Banner -->
-  
-        <br>
-  
-        <!-- Column -->
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h4 class="font-weight-bold mb-3">Kepala</h4>
-              <input type="checkbox" id="panas-demam" name="" value="Kepala">
-              <label for="panas-demam">Panas / Demam</label><br>
-              <input type="checkbox" id="migrain" name="" value="Kepala">
-              <label for="migrain">Pusing Kepala Sebelah</label><br>
-  
-              <br>
-  
-              <h4 class="font-weight-bold mb-3">Tenggorokan</h4>
-              <input type="checkbox" id="radang" name="" value="Tenggorokan">
-              <label for="radang">Radang</label><br>
-              <input type="checkbox" id="serak" name="" value="Tenggorokan">
-              <label for="serak">Suara Serak</label><br>
-  
-              <br>
-  
-              <h4 class="font-weight-bold mb-3">Dada</h4>
-              <input type="checkbox" id="sakit" name="" value="Dada">
-              <label for="sakit">Sakit</label><br>
-              <input type="checkbox" id="sesak" name="" value="Dada">
-              <label for="sesak">Sesak</label><br>
-            </div>
-            <div class="col">
-              <h4 class="font-weight-bold mb-3">Lainnya</h4>
-              <input type="checkbox" id="batuk" name="" value="Other">
-              <label for="batuk">Batuk</label><br>
-              <input type="checkbox" id="pilek" name="" value="Other">
-              <label for="pilek">Pilek</label><br>
-              <input type="checkbox" id="hidung-tersumbat" name="" value="Other">
-              <label for="hidung-tersumbat">Hidung Tersumbat</label><br>
-            </div>
-          </div>
-        </div>
-        <!-- Column -->
-  
-        <br>
-  
-        <!-- Button -->
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary pr-5 pl-5 text-justified" style="background-color: white; color: darkgray;">Previous</button>
-                <button type="button" class="btn btn-secondary pr-5 pl-5 text-justified" style="background-color: white; color: darkgray;">Next</button>
-              </div>
-            </div>
-            <div class="col text-right">
-              <button type="button" class="btn pr-5 pl-5" style="background-color: #F95F62; color: white;">Submit</button>
-            </div>
-          </div>
-        </div>
-        <!-- Button -->
-  
-        <br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+      <a class="navbar-brand" href="#"><img src="./resource/images/logoPrekso.png" width="160"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Search Doctor
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Account</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NavBar -->
 
+    <!-- Banner -->
+    <div class="jumbotron color-green">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                  <svg width="9em" height="9em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                  </svg>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                  <h1 class="display-4 text-right font-weight-bold text-uppercase text-light">Find a doctor</h1>
+                  <p class="lead text-right text-light">Take a seat, enter your symptoms, and we will find a doctor for you.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- Banner -->
+
+    <!-- Column -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h4 class="font-weight-bold my-3">Kepala</h4>
+          <div class="row">
+            <div class="col-md-12">
+              <input type="checkbox" id="panas-demam" name="" value="Kepala">
+              <label for="panas-demam">Panas / Demam</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <input type="checkbox" id="migrain" name="" value="Kepala">
+              <label for="migrain">Pusing Kepala Sebelah</label>
+            </div>
+          </div>
+          <h4 class="font-weight-bold my-3">Tenggorokan</h4>
+          <div class="row">
+            <div class="col-md-12">
+              <input type="checkbox" id="radang" name="" value="Tenggorokan">
+              <label for="radang">Radang</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <input type="checkbox" id="serak" name="" value="Tenggorokan">
+              <label for="serak">Suara Serak</label>
+            </div>
+          </div>
+          <h4 class="font-weight-bold my-3">Dada</h4>
+          <div class="row">
+            <div class="col-md-12">
+              <input type="checkbox" id="sakit" name="" value="Dada">
+              <label for="sakit">Sakit</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <input type="checkbox" id="sesak" name="" value="Dada">
+              <label for="sesak">Sesak</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h4 class="font-weight-bold my-3">Lainnya</h4>
+          <div class="row">
+            <div class="col-md-12">
+              <input type="checkbox" id="batuk" name="" value="Other">
+              <label for="batuk">Batuk</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <input type="checkbox" id="pilek" name="" value="Other">
+              <label for="pilek">Pilek</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <input type="checkbox" id="hidung-tersumbat" name="" value="Other">
+              <label for="hidung-tersumbat">Hidung Tersumbat</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Column -->
+    <!-- Button -->
+    <div class="container my-3">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary pr-5 pl-5 text-justified" style="background-color: white; color: darkgray;">Previous</button>
+            <button type="button" class="btn btn-secondary pr-5 pl-5 text-justified" style="background-color: white; color: darkgray;">Next</button>
+          </div>
+        </div>
+        <div class="col-md-6 text-right">
+          <button type="button" class="btn pr-5 pl-5" style="background-color: #F95F62; color: white;">Submit</button>
+        </div>
+      </div>
+    </div>
+    <!-- Button -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
