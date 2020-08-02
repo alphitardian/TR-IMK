@@ -1,48 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
 
     <!-- Responsive meta tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Reset CSS -->
-    <link rel="stylesheet" href="./resource/css/reset.css">
+    <link rel="stylesheet" href="./resource/css/reset.css" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
     <!-- Fonts CSS -->
-    <link rel="stylesheet" href="./resource/css/fonts.css"/>
-    
+    <link rel="stylesheet" href="./resource/css/fonts.css" />
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./resource/css/custom.css">
+    <link rel="stylesheet" href="./resource/css/custom.css" />
 
     <title>Search Doctor</title>
   </head>
   <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
-      <a class="navbar-brand" href="#"><img src="./resource/images/logoPrekso.png" width="160"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-light py-3">
+      <a class="navbar-brand" href="#"
+        ><img src="./resource/images/logoPrekso.png" width="160"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <li class="nav-item">
+            <a class="nav-link" href="search_doctor.html">
               Search Doctor
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">My Account</a>
+            <a class="nav-link" href="my_account.html">My Account</a>
           </li>
         </ul>
       </div>
@@ -52,18 +72,38 @@
     <!-- Banner -->
     <div class="jumbotron color-green">
       <div class="container">
-          <div class="row">
-              <div class="col-md-6 col-sm-6 col-xs-6">
-                  <svg width="9em" height="9em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                  </svg>
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-6">
-                  <h1 class="display-4 text-right font-weight-bold text-uppercase text-light">Find a doctor</h1>
-                  <p class="lead text-right text-light">Take a seat, enter your symptoms, and we will find a doctor for you.</p>
-              </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <svg
+              width="9em"
+              height="9em"
+              viewBox="0 0 16 16"
+              class="bi bi-search"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+              />
+            </svg>
           </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <h1
+              class="display-4 text-right font-weight-bold text-uppercase text-light"
+            >
+              Find a doctor
+            </h1>
+            <p class="lead text-right text-light">
+              Take a seat, enter your symptoms, and we will find a doctor for
+              you.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Banner -->
@@ -75,39 +115,39 @@
           <h4 class="font-weight-bold my-3">Kepala</h4>
           <div class="row">
             <div class="col-md-12">
-              <input type="checkbox" id="panas-demam" name="" value="Kepala">
+              <input type="checkbox" id="panas-demam" name="" value="Kepala" />
               <label for="panas-demam">Panas / Demam</label>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <input type="checkbox" id="migrain" name="" value="Kepala">
+              <input type="checkbox" id="migrain" name="" value="Kepala" />
               <label for="migrain">Pusing Kepala Sebelah</label>
             </div>
           </div>
           <h4 class="font-weight-bold my-3">Tenggorokan</h4>
           <div class="row">
             <div class="col-md-12">
-              <input type="checkbox" id="radang" name="" value="Tenggorokan">
+              <input type="checkbox" id="radang" name="" value="Tenggorokan" />
               <label for="radang">Radang</label>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <input type="checkbox" id="serak" name="" value="Tenggorokan">
+              <input type="checkbox" id="serak" name="" value="Tenggorokan" />
               <label for="serak">Suara Serak</label>
             </div>
           </div>
           <h4 class="font-weight-bold my-3">Dada</h4>
           <div class="row">
             <div class="col-md-12">
-              <input type="checkbox" id="sakit" name="" value="Dada">
+              <input type="checkbox" id="sakit" name="" value="Dada" />
               <label for="sakit">Sakit</label>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <input type="checkbox" id="sesak" name="" value="Dada">
+              <input type="checkbox" id="sesak" name="" value="Dada" />
               <label for="sesak">Sesak</label>
             </div>
           </div>
@@ -116,19 +156,24 @@
           <h4 class="font-weight-bold my-3">Lainnya</h4>
           <div class="row">
             <div class="col-md-12">
-              <input type="checkbox" id="batuk" name="" value="Other">
+              <input type="checkbox" id="batuk" name="" value="Other" />
               <label for="batuk">Batuk</label>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <input type="checkbox" id="pilek" name="" value="Other">
+              <input type="checkbox" id="pilek" name="" value="Other" />
               <label for="pilek">Pilek</label>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <input type="checkbox" id="hidung-tersumbat" name="" value="Other">
+              <input
+                type="checkbox"
+                id="hidung-tersumbat"
+                name=""
+                value="Other"
+              />
               <label for="hidung-tersumbat">Hidung Tersumbat</label>
             </div>
           </div>
@@ -141,16 +186,81 @@
       <div class="row">
         <div class="col-md-6 col-sm-6">
           <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary pr-5 pl-5 text-justified" style="background-color: white; color: darkgray;">Previous</button>
-            <button type="button" class="btn btn-secondary pr-5 pl-5 text-justified" style="background-color: white; color: darkgray;">Next</button>
+            <button
+              type="button"
+              class="btn btn-secondary pr-5 pl-5 text-justified"
+              style="background-color: white; color: darkgray;"
+            >
+              Previous
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary pr-5 pl-5 text-justified"
+              style="background-color: white; color: darkgray;"
+            >
+              Next
+            </button>
           </div>
         </div>
         <div class="col-md-6 col-sm-6 text-right">
-          <button type="button" class="btn pr-5 pl-5" style="background-color: #F95F62; color: white;">Submit</button>
+          <button
+            type="button"
+            class="btn pr-5 pl-5"
+            style="background-color: #f95f62; color: white;"
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>
     <!-- Button -->
+    <!-- Footer -->
+    <footer class="footer-container">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-3 col-sm-6">
+            <ul class="links">
+              <li class="links-link"><a href="#">Home</a></li>
+              <li class="links-link"><a href="#">About</a></li>
+              <li class="links-link"><a href="#">Services</a></li>
+              <li class="links-link"><a href="#">Hospitas</a></li>
+              <li class="links-link"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <ul class="links">
+              <li class="links-link"><a href="#">Doctor</a></li>
+              <li class="links-link"><a href="#">Department</a></li>
+              <li class="links-link"><a href="#">T % Cs</a></li>
+              <li class="links-link"><a href="#">Privacy</a></li>
+              <li class="links-link"><a href="#">Community</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <form class="form row mt-4">
+              <div class="col-md-12 text-white mb-3">Get our newsletter</div>
+              <div class="col-md-8 col-sm-8">
+                <div class="form-group mb-2">
+                  <label for="inputPassword2" class="sr-only">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassword2"
+                    placeholder="Password"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <button type="submit" class="btn btn-light mb-2">
+                  Subcribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -168,5 +278,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="./resource/js/script.js"></script>
   </body>
 </html>

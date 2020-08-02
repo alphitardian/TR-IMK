@@ -1,45 +1,115 @@
-body{
-    font-family: 'Lato', sans-serif!important;
+body {
+  font-family: "Lato", sans-serif !important;
 }
 
-.nav-item .nav-link{
-    color: #47525E!important;
-    font-size: 18px;    
-    padding-right: 1rem;
-    padding-left: 1rem;
+.nav-item .nav-link {
+  color: #47525e !important;
+  font-size: 18px;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
-.bannerImage{
-    background-image: linear-gradient(
-        rgba(3, 172, 14, 0.8),
-        rgba(3, 172, 14, 0.8)
-      ),
-      url(https://media.clinicaladvisor.com/images/2017/01/06/olderpatientwithdoctorcopd_1128541.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 200px;
+.bannerImage {
+  background-image: linear-gradient(
+      rgba(3, 172, 14, 0.8),
+      rgba(3, 172, 14, 0.8)
+    ),
+    url(https://media.clinicaladvisor.com/images/2017/01/06/olderpatientwithdoctorcopd_1128541.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 204px;
+  top: 200px;
+  background-attachment: fixed;
+  background-position: 0px 40px;
 }
 
-a.servicesMenu .card-title{
-    color: #333;
-    transition: ease .5s all;
+a.servicesMenu .card-title {
+  color: #333;
+  transition: ease 0.5s all;
 }
-a.servicesMenu:hover{
-    background-color: #eee;
-    text-decoration: none!important;
-    transition: ease .5s all;
-}
-
-.specialistPhoto{
-    width: 95%;
-    transition: ease .5s all;
-}
-.specialistPhoto:hover{
-    width: 100%;
-    transition: ease .5s all;
+a.servicesMenu:hover {
+  background-color: #eee;
+  text-decoration: none !important;
+  transition: ease 0.5s all;
 }
 
-.color-green{
-    background-color: rgba(3, 172, 14, 0.8);
+.specialistPhoto {
+  width: 95%;
+  transition: ease 0.5s all;
+}
+.specialistPhoto:hover {
+  width: 100%;
+  transition: ease 0.5s all;
+}
+
+.color-green {
+  background-color: rgba(3, 172, 14, 0.8);
+}
+
+.navbar-fixed-position {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  -webkit-box-shadow: 9px 5px 27px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 5px 27px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 5px 27px -12px rgba(0, 0, 0, 0.75);
+  transition: ease 0.5s all;
+}
+
+.navbar {
+  transition: ease 0.5s all;
+}
+
+.flying-panel {
+  display: block;
+  position: absolute;
+  top: 176px;
+  background: #fff;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 10px 10px 41px -24px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 41px -24px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 41px -24px rgba(0, 0, 0, 0.75);
+  width: 40%;
+}
+
+.notification-panel {
+  right: 165px;
+  font-size: 14px;
+  transition: ease 0.5s all;
+  display: none;
+}
+
+.chat-panel {
+  right: 110px;
+  font-size: 14px;
+  transition: ease 0.5s all;
+  display: none;
+}
+
+.notification-container,
+.chat-container {
+  margin: 15px 0px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.footer-container {
+  background: #47525e;
+}
+
+.links .links-link a {
+  color: #fff;
+  transition: ease 0.5s all;
+  margin-bottom: 5px;
+}
+.links .links-link a:hover {
+  text-decoration: none;
+  transition: ease 0.5s all;
+  color: #aaa;
+}
+.links-link {
+  margin-bottom: 10px;
 }
