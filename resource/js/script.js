@@ -1,11 +1,3 @@
-$(window).scroll(function () {
-  var navbarClass = $(".navbar"),
-    scrollPosition = $(window).scrollTop();
-
-  if (scrollPosition >= 50) navbarClass.addClass("navbar-fixed-position");
-  else navbarClass.removeClass("navbar-fixed-position");
-});
-
 $(document).ready(function () {
   $("#notification-button").click(function () {
     $(".notification-panel").toggle(1000);
@@ -13,33 +5,26 @@ $(document).ready(function () {
   $("#chat-button").click(function () {
     $(".chat-panel").toggle(1000);
   });
+
+  $(window).scroll(function () {
+    var navbarClass = $(".navbar"),
+      scrollPosition = $(window).scrollTop();
+
+    if (scrollPosition >= 50) navbarClass.addClass("navbar-fixed-position");
+    else navbarClass.removeClass("navbar-fixed-position");
+  });
 });
 
 var ctx = document.getElementById("myChart").getContext("2d");
 var myChart = new Chart(ctx, {
   type: "bar",
   data: {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "June"],
     datasets: [
       {
-        label: "# of Votes",
+        label: "# of Health",
         data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: [
-          "rgba(255, 99, 132, 0.2)",
-          "rgba(54, 162, 235, 0.2)",
-          "rgba(255, 206, 86, 0.2)",
-          "rgba(75, 192, 192, 0.2)",
-          "rgba(153, 102, 255, 0.2)",
-          "rgba(255, 159, 64, 0.2)",
-        ],
-        borderColor: [
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-          "rgba(75, 192, 192, 1)",
-          "rgba(153, 102, 255, 1)",
-          "rgba(255, 159, 64, 1)",
-        ],
+        backgroundColor: "rgba(255, 99, 132, 0.2)",
         borderWidth: 1,
       },
     ],
