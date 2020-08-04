@@ -1,127 +1,215 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Login</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<style>
-		#card {
-			background: #fbfbfb;
-			border-radius: 8px;
-			box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-			height: 410px;
-			margin: 6rem auto 8.1rem auto;
-			width: 329px;
-		}
-		
-		body {
-		   background: -webkit-linear-gradient(bottom, #2dbd6e, #a6f77b);
-		   background-repeat: no-repeat;
-		}
-		
-		#card-content {
-		  padding: 12px 44px;
-		}
-		#card-title {
-			  font-family: "Raleway Thin", sans-serif;
-			  letter-spacing: 4px;
-			  padding-bottom: 23px;
-			  padding-top: 13px;
-			  text-align: center;
-		}
-		.underline-title {
-			  background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
-			  height: 2px;
-			  margin: -1.1rem auto 0 auto;
-			  width: 89px;
-		}
-		
-		a {
-		text-decoration: none;
-		}
-		label {
-			font-family: "Raleway", sans-serif;
-			font-size: 11pt;
-		}
-		#forgot-pass {
-			color: #2dbd6e;
-			font-family: "Raleway", sans-serif;
-			font-size: 10pt;
-			margin-top: 3px;
-			text-align: right;
-		}
-		.form {
-			align-items: left;
-			display: flex;
-			flex-direction: column;
-		}
-		.form-border {
-			background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
-			height: 1px;
-			width: 100%;
-		}
-		.form-content {
-			background: #fbfbfb;
-			border: none;
-			outline: none;
-			padding-top: 14px;
-		}
-		
-		#signup {
-		color: #2dbd6e;
-		font-family: "Raleway", sans-serif;
-		font-size: 10pt;
-		margin-top: 16px;
-		text-align: center;
-		}
-		#submit-btn {
-			background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
-			border: none;
-			border-radius: 21px;
-			box-shadow: 0px 1px 8px #24c64f;
-			cursor: pointer;
-			color: white;
-			font-family: "Raleway SemiBold", sans-serif;
-			height: 42.3px;
-			margin: 0 auto;
-			margin-top: 50px;
-			transition: 0.25s;
-			width: 153px;
-		}
-		#submit-btn:hover {
-			box-shadow: 0px 1px 18px #24c64f;
-		}
-	</style>
-</head>
-	<body>
-		<div id="card"> 
-			<div id="card-content">
-				<div id="card-title">
-					<h2>LOGIN</h2>
-					<div class="underline-title"></div>
-				</div>
-			</div>
-			<form method="post" class="form"> 
-				<label for="user-email" style="padding-top:13px">&nbsp;Email</label>
-				<input
-				   id="user-email"
-				   class="form-content"
-				   type="email"
-				   name="email"
-				   autocomplete="on"
-				   required />
-				<div class="form-border"></div>
-				<label for="user-password" style="padding-top:22px">&nbsp;Password</label>
-				<input
-				   id="user-password"
-				   class="form-content"
-				   type="password"
-				   name="password"
-				   required />
-				<div class="form-border"></div>
-				<a href="#"><legend id="forgot-pass">Forgot password?</legend></a>
-				<input id="submit-btn" type="submit" name="submit" value="LOGIN" /> 
-				<a href="#" id="signup">Don't have account yet?</a>			
-			</form>
-		</div>
-	</body>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+
+    <!-- Responsive meta tags -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./resource/css/reset.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fonts CSS -->
+    <link rel="stylesheet" href="./resource/css/fonts.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./resource/css/custom.css" />
+
+    <title>PreksoMedico</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-light py-3">
+      <a class="navbar-brand" href="#"
+        ><img src="./resource/images/logoPrekso.png" width="160"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search_doctor.html">
+              Search Doctor
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="my_account.html">My Account</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NavBar -->
+
+    <!-- Sign In -->
+    <div
+      class="jumbotron bannerImage"
+      style="margin-bottom: 0; min-height: 500px; padding-top: 100px;"
+    >
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="card col-md-5">
+            <div class="card-body text-center">
+              <h4 class="font-weight-bold">Sign In</h4>
+              <div class="row mt-2">
+                <div class="offset-md-2"></div>
+                <div class="col-md-8 col-sm-12">
+                  <p class="text-muted">
+                    <small>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In nec nibh vitae...
+                    </small>
+                  </p>
+                </div>
+              </div>
+              <form>
+                <div class="form-group row">
+                  <div class="offset-md-2"></div>
+                  <div class="col-md-8 col-sm-12">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputEmail3"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="offset-md-2"></div>
+                  <div class="col-md-8 col-sm-12">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="inputPassword3"
+                      placeholder="Password"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="offset-md-2"></div>
+                  <div class="col-md-8 col-sm-12">
+                    <button type="submit" class="btn btn-secondary btn-block">
+                      Sign in
+                    </button>
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-md-12">
+                    <a class="text-muted text-center" href="register.html">
+                      <small>
+                        Forgot your password?
+                      </small>
+                    </a>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-12">
+                    <a class="text-muted text-center" href="register.html">
+                      <small>
+                        Sign Up
+                      </small>
+                    </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sign In -->
+    <!-- Footer -->
+    <footer class="footer-container">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-3 col-sm-6">
+            <ul class="links">
+              <li class="links-link"><a href="#">Home</a></li>
+              <li class="links-link"><a href="#">About</a></li>
+              <li class="links-link"><a href="#">Services</a></li>
+              <li class="links-link"><a href="#">Hospitas</a></li>
+              <li class="links-link"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <ul class="links">
+              <li class="links-link"><a href="#">Doctor</a></li>
+              <li class="links-link"><a href="#">Department</a></li>
+              <li class="links-link"><a href="#">T % Cs</a></li>
+              <li class="links-link"><a href="#">Privacy</a></li>
+              <li class="links-link"><a href="#">Community</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <form class="form row mt-4">
+              <div class="col-md-12 text-white mb-3">Get our newsletter</div>
+              <div class="col-md-8 col-sm-8">
+                <div class="form-group mb-2">
+                  <label for="inputPassword2" class="sr-only">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassword2"
+                    placeholder="Password"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <button type="submit" class="btn btn-light mb-2">
+                  Subcribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./resource/js/script.js"></script>
+  </body>
 </html>
