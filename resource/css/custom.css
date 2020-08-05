@@ -35,10 +35,12 @@ a.servicesMenu:hover {
 }
 
 .specialistPhoto {
+  height: 95%;
   width: 95%;
   transition: ease 0.5s all;
 }
 .specialistPhoto:hover {
+  height: 100%;
   width: 100%;
   transition: ease 0.5s all;
 }
@@ -147,4 +149,8 @@ a.chat-container:hover,
 a.notification-container:hover {
   background-color: #eee;
   transition: 0.5s ease all;
+}
+
+.btn-signup {
+  color: white;
 }
